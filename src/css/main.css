@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+    font-family: 'sans';
+    src: url('../font/IRANSansLight.woff');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'shabnam';
+    src: url('../font/Shabnam-FD.woff2');
+    font-style: normal;
+    font-weight: normal;
+}
+@theme{
+    --font-sans:sans;
+    --font-shabnam:shabnam;
+}
