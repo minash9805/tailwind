@@ -13,18 +13,12 @@
 <!-- header -->
 
 <div
-        class="header w-full bg-[#232323] lg:h-25 lg:grid  xl:gap-x-10 lg:grid-cols-[1fr_3fr] grid-cols-1 px-5 py-5 lg:py-0 flex flex-col justify-center items-center gap-y-4 sticky top-0 z-50">
+        class="header w-full bg-[#232323] lg:h-25 lg:grid  xl:gap-x-10 lg:grid-cols-[1fr_3fr] grid-cols-1 px-5 py-5 lg:py-0 flex flex-col justify-center items-center gap-y-4 md:sticky top-0 z-50 ">
     <div class="header-img lg:w-1/2 h-full xl:justify-self-end lg:relative lg:justify-self-center"><img
             src="./src/img/1.png" alt="" class="lg:absolute lg:top-1/2 w-full max-w-42.5">
     </div>
-    <div class="md:hidden w-full flex justify-start">
-        <svg class="w-8 h-8 text-[#afb2b4] dark:text-gray-200"
-             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
-             stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-    </div>
-    <nav class="header-nav h-full hidden md:flex items-center lg:gap-x-4 gap-x-3 relative">
+
+    <nav class="header-nav h-full flex-col gap-y-3 md:flex-row flex items-center lg:gap-x-4 gap-x-3 relative">
         <div class="flex items-center"><a href="./main-page.html"
                                           class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">صفحه
             اصلی</a></div>
@@ -33,7 +27,7 @@
             <a href="#"
                class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">شرکت
                 گلستان</a>
-            <div class="sub-menu w-1/6 bg-[#2b2b2b] absolute top-18 px-5 py-3 hidden group-hover:block">
+            <div class="sub-menu w-50 md:w-1/6 bg-[#2b2b2b] absolute top-18 px-5 py-3 hidden group-hover:block">
                 <a href="./intro.html"
                    class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear leading-12 block">معرفی
                     شرکت</a>
@@ -62,7 +56,7 @@
         <div class="flex items-center group h-full">
             <a href="#"
                class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">محصولات</a>
-            <div class="sub-menu w-1/6 bg-[#2b2b2b] absolute top-18 px-5 py-3 hidden group-hover:block">
+            <div class="sub-menu w-50 md:w-1/6 bg-[#2b2b2b] absolute top-30 md:top-18 px-5 py-3 hidden group-hover:block">
                 <a href="./index.html"
                    class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear leading-12 block">چای</a>
                 <a href="./nuts.html"
@@ -105,7 +99,7 @@
         <div class="line lg:w-[0.5px] lg:h-6 lg:bg-[#afb2b477]"></div>
         <div class="flex items-center h-full group"><a href="#"
                                                        class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">وبلاگ</a>
-            <div class="sub-menu w-1/6 bg-[#2b2b2b] absolute top-18 px-5 hidden group-hover:block">
+            <div class="sub-menu w-50 md:w-1/6 bg-[#2b2b2b] absolute top-42 md:top-18 px-5 hidden group-hover:block">
                 <a href="#"
                    class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear leading-12 block">مجله
                     گلستان</a>
@@ -122,10 +116,9 @@
         <div class="line lg:w-[0.5px] lg:h-6 lg:bg-[#afb2b477]"></div>
         <div class="flex items-center h-full group">
             <a href="#"
-               class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">تماس
-                با
+               class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">تماس با
                 ما</a>
-            <div class="sub-menu w-1/6 bg-[#2b2b2b] absolute top-18 px-5 py-3 hidden group-hover:block">
+            <div class="sub-menu w-50 md:w-1/6 bg-[#2b2b2b] absolute top-78 md:top-18 px-5 py-3 hidden group-hover:block">
                 <a href="#"
                    class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear leading-12 block">دفتر
                     مرکزی</a>
@@ -141,11 +134,13 @@
         </div>
         <div class="line lg:w-[0.5px] lg:h-6 lg:bg-[#afb2b477]"></div>
         <div id="darkModeToggle" class="flex items-center"><a href="#"
-                                          class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21 12.79C20.8427 14.4922 20.2039 16.1144 19.1583 17.4668C18.1127 18.8192 16.7035 19.8458 15.0957 20.4265C13.4879 21.0073 11.748 21.1181 10.0795 20.7461C8.41105 20.3741 6.88299 19.5345 5.67423 18.3258C4.46548 17.117 3.62594 15.5889 3.2539 13.9205C2.88186 12.252 2.99268 10.5121 3.57345 8.9043C4.15423 7.29651 5.18078 5.88727 6.53316 4.84167C7.88554 3.79607 9.50779 3.15731 11.21 3C10.2134 4.34827 9.73384 6.00945 9.85853 7.68141C9.98323 9.35338 10.7039 10.9251 11.8894 12.1106C13.0749 13.2961 14.6466 14.0168 16.3186 14.1415C17.9905 14.2662 19.6517 13.7866 21 12.79Z"
-                  fill="#1A1A1A" stroke="#afb2b4" stroke-width="1.5" stroke-linecap="round"
-                  stroke-linejoin="round"/>
-        </svg></a>
+                                                              class="text-[#afb2b4] hover:text-white transition-all duration-300 ease-linear whitespace-nowrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 12.79C20.8427 14.4922 20.2039 16.1144 19.1583 17.4668C18.1127 18.8192 16.7035 19.8458 15.0957 20.4265C13.4879 21.0073 11.748 21.1181 10.0795 20.7461C8.41105 20.3741 6.88299 19.5345 5.67423 18.3258C4.46548 17.117 3.62594 15.5889 3.2539 13.9205C2.88186 12.252 2.99268 10.5121 3.57345 8.9043C4.15423 7.29651 5.18078 5.88727 6.53316 4.84167C7.88554 3.79607 9.50779 3.15731 11.21 3C10.2134 4.34827 9.73384 6.00945 9.85853 7.68141C9.98323 9.35338 10.7039 10.9251 11.8894 12.1106C13.0749 13.2961 14.6466 14.0168 16.3186 14.1415C17.9905 14.2662 19.6517 13.7866 21 12.79Z"
+                      fill="#1A1A1A" stroke="#afb2b4" stroke-width="1.5" stroke-linecap="round"
+                      stroke-linejoin="round"/>
+            </svg>
+        </a>
         </div>
 
     </nav>
